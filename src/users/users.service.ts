@@ -23,7 +23,6 @@ export class UsersService {
   }
 
   async create(user: Partial<User>): Promise<User> {
-    console.log('user', user);
     if (!user.password) {
       throw new Error('Password is required');
     }
